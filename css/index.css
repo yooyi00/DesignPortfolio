@@ -182,8 +182,8 @@ body {
   .intro .intro_inner .left .picture {
     width: 60%;
     height: 90%;
-    max-width: 350px;
-    max-height: 400px;
+    max-width: 300px;
+    max-height: 350px;
     min-width: 250px;
     min-height: 300px;
     display: flex;
