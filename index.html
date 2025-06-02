@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta  name="viewport"  content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1"/>
+    <title>PORTFOLIO</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/index.css" />
+
+    <!--fontawsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--script-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/splitting.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+
+  <body>
+    <!--header-->
+    <header>
+      <div class="menu_bar"><i class="fa-solid fa-bars"></i></div>
+
+      <div class="modal en01">
+        <ul class="gnb">
+        <li><a href="#intro">INTRO</a></li>
+        <li><a href="#about">ABOUT ME</a></li>
+        <li><a href="#design">DESIGN</a></li>
+        <li><a href="#draft">DRAFT</a></li>
+        <li><a href="#project">PROJECT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+
+      <div class="close"><i class="fa-solid fa-xmark"></i></div>
+      </div>
+    </header>
+
+    <!--container-->
+        <div id="container">
+          <!--intro-->
+          <section class="intro" id="intro">
+            <!--intro_inner-->
+      <div class="intro_inner">
+        <!--left-->
+        <div class="left">
+          <div class="picture">
+            <div class="tape01"><img src="img/wood.png" alt="" /></div>
+            <div class="profile">
+              <img src="img/pofile.jpg" alt="" />
+            </div>
+            <svg
+              id="Layer_1"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 524.18 116.05"
+            >
+              <path
+                class="cls-2"
+                d="M30.9,48.5c-3.99,1.67-7.6,2.7-10.81,3.05-11.22,1.19-18.79-11.26-12.65-20.74C15.92,17.72,38.52,4.77,57.73,5.26c4.76,.12,8.94,3.36,10.1,7.98,4.63,18.44-23.19,44.22-29.38,69.67-.33,1.36,1.38,2.27,2.35,1.26,9.67-10.02,38.37-39.76,48.97-50.75,.86-.89,2.32,.05,1.87,1.21-4.82,12.42-8.92,25.72-6.76,36.09,1.12,5.38,5.99,9.11,11.48,9.26,34.65,.93,55.42-53.92,31.05-65.86"
+              />
+              <path
+                class="cls-2"
+                d="M133.45,63.55c8.39,.19,17.98-3.6,22.14-9.3,2.61-3.57,.11-8.29-4.31-8.2-2.71,.06-5.34,1.37-8.72,3.73-5.43,4.4-9.16,10.21-10.28,17.15-.73,4.5,2.35,8.7,6.86,9.42,10.38,1.65,19.05-5.55,27.29-15.02"
+              />
+              <path
+                class="cls-2"
+                d="M298.83,63.55c8.39,.19,17.98-3.6,22.14-9.3,2.61-3.57,.11-8.29-4.31-8.2-2.71,.06-5.34,1.37-8.72,3.73-5.43,4.4-9.16,10.21-10.28,17.15-.73,4.5,2.35,8.7,6.86,9.42,10.38,1.65,19.05-5.55,27.29-15.02"
+              />
+              <path
+                class="cls-2"
+                d="M457.06,63.55c8.39,.19,17.98-3.6,22.14-9.3,2.61-3.57,.11-8.29-4.31-8.2-2.71,.06-5.34,1.37-8.72,3.73-5.43,4.4-9.16,10.21-10.28,17.15-.73,4.5,2.35,8.7,6.86,9.42,10.38,1.65,19.05-5.55,27.29-15.02"
+              />
+              <path
+                class="cls-2"
+                d="M188.8,25.4c-12.8,15.75-23.24,31.28-26.6,46.15-.63,2.81,1.61,5.51,4.49,5.44,11.06-.25,18.42-7.6,23.57-19.22,2-4.52-1.79-9.44-6.67-8.66-7.87,1.26-13.4,4.27-17.15,12.22"
+              />
+              <path
+                class="cls-2"
+                d="M217.42,43.54c-8.07,1.57-13.69-.05-16.55-5.24-1.97-3.57-1.86-7.95-.25-11.69,3.71-8.62,11.33-13.83,21.57-16.76,5.65-1.61,11.53-2.24,17.41-2.24h26.74c5.89,0,11.79,.89,17.32,2.92,.15,.05,.3,.11,.45,.17,13.91,5.22,20.52,21.47,14.48,35.04-14.34,32.18-51.11,43.69-69.8,40.8-5.59-.86-9.62-6.2-8.93-11.81,2.65-21.52,18.08-39.07,38.28-55.14"
+              />
+              <path
+                class="cls-2"
+                d="M350.41,55.57c4.37-2.48,6.82-4.8,4.55-7.54-1.18-1.43-3.01-2.14-4.85-2.31-11.15-1.05-19.33,4.69-18.3,11.86,.77,7.7,17.37-.17,19.59,6.5,1.2,6.34-11.61,16.63-25.15,18.49"
+              />
+              <path
+                class="cls-1"
+                d="M377.68,50.65c-6.1,7.83-11.14,16.69-11.27,26.7-.03-.62-.74-1.65-1.55-1.75-.35-.08-.72-.06-1.05,.06,.05,0,.25-.05,.37-.08,7.09-1.46,13.19-4.75,19.41-8.88,.85-.58,2.02-.34,2.58,.52,.43,.66,.39,1.5-.05,2.1-3.14,4.3-7.14,8.11-11.91,11.05-2.38,1.46-4.95,2.7-7.64,3.61-1.38,.54-2.99,.6-4.43,.18-2.89-.78-5.05-3.68-5.07-6.69-1.12-12.38,4.51-24.61,12.55-33.57,4.62-4.95,12.1,1.31,8.06,6.73h0Z"
+              />
+              <path
+                class="cls-2"
+                d="M417.2,51.07c-8.41-5.01-15.68-3.94-23.88,4.61-5.51,5.06-9.24,7.96-10.19,15.87-.55,4.52,2.87,6.3,7.36,5.53,2.84-.49,6.44-2.5,9-5.31l16.09-17.8-18.82,37.9c-1.73,4.23-3.95,8.28-6.86,11.8-3.39,4.1-7.13,6.88-11.49,7.11-2.33,.12-4.18-1.98-3.94-4.3,.63-6.21,5.09-12.85,11.17-19.49,6.45-8.17,17.38-11.53,27.98-17.2"
+              />
+              <path
+                class="cls-2"
+                d="M431.83,47.28l-15.4,30.31c9.5-16.53,19.19-26.11,29.37-28.95,2.33-.65,4.89,.74,5.22,3.13,.59,4.26-4.25,10.7-12.26,22.25-.87,1.26-.15,3.06,1.38,3.26,5.59,.72,10.84-1.33,15.65-6.88"
+              />
+              <path
+                class="cls-2"
+                d="M498.4,47.28l-15.74,30.31c12.07-21.65,24.15-33.2,36.28-26.52"
+              />
+              <circle class="cls-1" cx="379.65" cy="30.13" r="5.21" />
+            </svg>
+          </div>
+        </div>
+
+        <!--right-->
+        <div class="right">
+          <div class="textBox">
+            <div class="title en01">
+              <h2>
+                MY<span>PORTFOLIO</span>
+              </h2>
+            </div>
+
+            <div data-splitting class="ment en03">
+              <span class="color">호기심</span>이 많아 많은 것을 시도하고자
+              합니다.<br />
+              <span class="color">다양한 시도</span>끝에
+              <span class="color">완벽한 결과물</span>을 완성해 내는<br />웹디자이너가
+              되고싶습니다.
+            </div>
+          </div>
+
+          <ul class="info en03">
+            <li>
+              <div class="top"></div>
+              유예인
+              <div class="bottom"></div>
+            </li>
+            <li>
+              <div class="top"></div>
+              ISFP
+              <div class="bottom"></div>
+            </li>
+            <li>
+              <div class="top"></div>
+              2000.11.09
+              <div class="bottom"></div>
+            </li>
+            <li>
+              <div class="top"></div>
+              010-6322-3228
+              <div class="bottom"></div>
+            </li>
+            <li>
+              <a
+                href="https://www.notion.so/1fc1037467808029af26e34df3d5c8e3"
+                target="_blank"
+                ><div class="top"></div>
+                Notion 바로가기
+                <div class="bottom"></div
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--about-->
+        <section class="about" id="about">
+          <!--about_inner-->
+          <div class="about_inner">
+            <ul class="circles">
+              <li class="left_circle"></li>
+              <li class="right_circle"></li>
+            </ul>
+
+              <h2 class="Title en01">ABOUT ME</h2>
+
+              <!--about_con-->
+            <div class="con">
+              <!--about_con_left-->
+              <div class="left">
+                <div class="left_up">
+                  <h3 class="en02">학력</h3>
+                  <p class="en04">2021.03 신구대학교 글로벌경영과 졸업</p>
+                  <p class="en04">2019.01 정화여자상업고등학교 졸업</p>
+                </div>
+                <div class="left_down">
+                  <h3 class="en02">자격증</h3>
+                  <p class="en04">GTQ 그래픽기술자격 1급</p>
+                  <p class="en04">(한국생산성본부 / 2025.03.14)</p>
+                  <p class="en04">전산회계 2급</p>
+                  <p class="en04">(한국세무사회 / 2017.09.06)</p>
+                  <p class="en04">ITQ 한글엑셀</p>
+                  <p class="en04">(한국생산성본부 / 2016.09.29)</p>
+                  <p class="en04">ITQ 아래한글</p>
+                  <p class="en04">(한국생산성본부 / 2016.07.26)</p>
+                </div>
+              </div>
+
+              <div class="line01"></div>
+
+              <!--about_con_center-->
+              <div class="center">
+                <div>
+                  <h3 class="en02">경력</h3>
+                  <p class="en04">2024.12 ~ 재직 중</p>
+                  <p class="en04">더벤티 강서구청사거리점 아르바이트</p>
+                  <p class="en04">2023.12 ~ 2024.11</p>
+                  <p class="en04">던킨도너츠 김포공항국제선점 매니저</p>
+                  <p class="en04">2021.09 ~ 2022.06</p>
+                  <p class="en04">KFC 매니저</p>
+                  <p class="en04">2018.04 ~ 2020.12</p>
+                  <p class="en04">KFC 아르바이트</p>
+                </div>
+              </div>
+
+              <div class="line02"></div>
+
+              <!--about_con_right-->
+              <div class="right">
+                <h3 class="en02">활용능력</h3>
+                <ul>
+                  <li><img src="img/hangeul.png" alt="한글" /></li>
+                  <li><img src="img/exel.png" alt="엑셀" /></li>
+                  <li><img src="img/illustrator.png" alt="일러스트" /></li>
+                  <li><img src="img/photoshop.png" alt="포토샵" /></li>
+                  <li><img src="img/aftereffect.png" alt="애프터이펙트" /></li>
+                  <li><img src="img/premierepro.png" alt="프리미어" /></li>
+                  <li><img src="img/html.png" alt="html" /></li>
+                  <li><img src="img/css.png" alt="css" /></li>
+                  <li><img src="img/vscode.png" alt="vscode" /></li>
+                  <li><img src="img/jquery.png" alt="jquery" /></li>
+                  <li><img src="img/figma.png" alt="피그마" /></li>
+                  <li><img src="img/github.png" alt="깃허브" /></li>
+                  <li>
+                    <a
+                      href="https://www.notion.so/16f103746780806fafbfebb5f8ea6a22"
+                      target="_blank"
+                      ><img src="img/notion.png" alt="노션"
+                    /></a>
+                  </li>
+                </ul>
+                <div class="click">
+                  <img src="img/click.png" alt="클릭이미지" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--design-->
+        <section class="design" id="design">
+          <!--design_inner-->
+          <div class="inner">
+            <div class="right_circle"></div>
+
+              <h2 class="Title en01">DESIGN</h2>
+
+              <!--design_imgWrap-->
+            <ul class="imgWrap">
+              <li class="ds01">
+                <div class="ds_txt en03">
+                  <p>POP-UP STORE 오픈<br />일러스트 작업</p>
+                  <div class="button en04">
+                    목업 보러가기 <i class="fa-solid fa-arrow-up-long"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="ds02">
+                <div class="ds_txt en03">
+                  <p>1+1 쿠폰 일러스트 작업</p>
+                  <div class="button en04">
+                    목업 보러가기 <i class="fa-solid fa-arrow-up-long"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="ds03">
+                <div class="ds_txt en03">
+                  <p>봄맞이 쿠폰 일러스트 작업</p>
+                  <div class="button en04">
+                    목업 보러가기 <i class="fa-solid fa-arrow-up-long"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="ds04">
+                <div class="ds_txt en03">
+                  <p>추석맞이 할인 행사<br />일러스트 작업</p>
+                  <div class="button en04">
+                    목업 보러가기 <i class="fa-solid fa-arrow-up-long"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="ds05">
+                <div class="ds_txt en03">
+                  <p>FLEA MATKET<br />일러스트 작업</p>
+                  <div class="button en04">
+                    목업 보러가기 <i class="fa-solid fa-arrow-up-long"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="ds06">
+                <div class="ds_txt en03">
+                  <p>1+1 쿠폰 일러스트 작업</p>
+                  <div class="button en04">
+                    목업 보러가기 <i class="fa-solid fa-arrow-up-long"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <!--design_view_modal-->
+            <ul class="view">
+              <li class="popup">
+                <img src="img/popup_mokup.png" alt="" />
+                <div class="close"><i class="fa-solid fa-xmark"></i></div>
+              </li>
+              <li class="coupon">
+                <img src="img/coupon_mokup.png" alt="" />
+                <div class="close"><i class="fa-solid fa-xmark"></i></div>
+              </li>
+              <li class="spring">
+                <img src="img/spring_mokup.png" alt="" />
+                <div class="close"><i class="fa-solid fa-xmark"></i></div>
+              </li>
+              <li class="bigsale">
+                <img src="img/festival_mokup.png" alt="" />
+                <div class="close"><i class="fa-solid fa-xmark"></i></div>
+              </li>
+              <li class="flea">
+                <img src="img/fleamarket_mokup.png" alt="" />
+                <div class="close"><i class="fa-solid fa-xmark"></i></div>
+              </li>
+              <li class="sale">
+                <img src="img/sweet_mokup.png" alt="" />
+                <div class="close"><i class="fa-solid fa-xmark"></i></div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!--design_draft-->
+        <section class="draft" id="draft">
+          <div class="inner">
+            <ul class="circles">
+              <li class="left_circle"></li>
+              <li class="right_circle"></li>
+            </ul>
+
+            <h2 class="Title en01">DESIGN DRAFT</h2>
+
+            <div class="con">
+              <div class="left">
+                <h2 class="en02">Design 시안 작업</h2>
+
+                <ul class="txt">
+                  <li>디자인 기간 : 00월 00일 ~ 00월 00일 (총 0주)</li>
+                  <li>TOOL</li>
+                  <li>
+                    <ul class="tool">
+                      <li><img src="img/figma.png" alt="figma"></li>
+                      <li><img src="img/photoshop.png" alt="photoshop"></li>
+                      <li><img src="img/illustrator.png" alt="illustrator"></li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <div class="buttons en02">
+                  <a href="#">기획서 보러가기</a>
+                </div>
+              </div>
+              <div class="right"><img src="img/device.png" alt=""></div>
+            </div>
+
+            <div class="arrows">
+              <div class="prev"></div>
+              <div class="next"></div>
+            </div>
+          </div>
+        </section>
+
+        <!--project-->
+        <!--spc-->
+        <section class="project spc" id="project">
+          <!--project_inner-->
+          <div class="inner">
+            <ul class="circles">
+              <li class="left_circle"></li>
+              <li class="right_circle"></li>
+            </ul>
+            
+              <h2 class="Title en01">PROJECT</h2>
+
+              <!--project_cloneWrap-->
+            <div class="cloneWrap">
+              <!--project_cloneWrap_left-->
+              <div class="left">
+                <ul class="mokup">
+                  <div class="circle"></div>
+                  <li class="pc">
+                    <img src="img/spc_pc_mokup.png" alt="spc_pc" />
+                  </li>
+                  <li class="mo">
+                    <img src="img/spc_mp_mokup.png" alt="spc_mo" />
+                  </li>
+                </ul>
+              </div>
+
+              <!--project_cloneWrap_right-->
+              <div class="right">
+                <h3 class="en02">Clone Coding</h3>
+
+                <ul class="con en03">
+                  <li>SPC 사이트</li>
+                  <li>제작기간 : 2주</li>
+                  <li>기여도 : 100%</li>
+                  <li>사용프로그램</li>
+                </ul>
+
+                <ul class="tool">
+                  <li><img src="img/vscode.png" alt="vscode" /></li>
+                  <li><img src="img/html.png" alt="html" /></li>
+                  <li><img src="img/css.png" alt="css" /></li>
+                  <li>
+                    <img src="img/github.png" alt="github" />
+                  </li>
+                  <li></li>
+                </ul>
+
+                <div class="txt en04">
+                  SPC 사이트는 레이아웃의 구조가 통일되어 있으면서도 구간이 잘
+                  나뉘어져 있고, visual에는 setInterval을 활용하여 fade효과를
+                  주었고, PC와 모바일의 header 형태가 다르며 text를 사용한
+                  레이아웃이 있어 html과 css를 더 배울 수 있는 사이트라고
+                  생각되어 clone coding 사이트로 선택하였습니다.
+                </div>
+
+                <div class="button en03">
+                  <a href=" https://yooyi00.github.io/spc/" target="_blank"
+                    >사이트 바로가기</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--storytaco-->
+        <section class="project story">
+          <!--project_inner-->
+          <div class="inner">
+            <!--project_cloneWrap-->
+            <div class="cloneWrap">
+              <!--project_cloneWrap_left-->
+              <div class="left">
+                <ul class="mokup">
+                  <div class="circle"></div>
+                  <li class="pc">
+                    <img src="img/storytaco_pc_mokup.png" alt="storytaco_pc" />
+                  </li>
+                  <li class="mo">
+                    <img src="img/storytaco_mo_mokup.png" alt="storytaco_mo" />
+                  </li>
+                </ul>
+              </div>
+
+              <!--project_cloneWrap_right-->
+              <div class="right">
+                <h3 class="en02">Clone Coding</h3>
+
+                <ul class="con en03">
+                  <li>STORYTACO 사이트</li>
+                  <li>제작기간 : 2주</li>
+                  <li>기여도 : 100%</li>
+                  <li>사용프로그램</li>
+                </ul>
+
+                <ul class="tool">
+                  <li><img src="img/vscode.png" alt="vscode" /></li>
+                  <li><img src="img/html.png" alt="html" /></li>
+                  <li><img src="img/css.png" alt="css" /></li>
+                  <li>
+                    <img src="img/github.png" alt="github" />
+                  </li>
+                  <li></li>
+                </ul>
+
+                <div class="txt en04">
+                  STORYTACO 사이트는 visual로 영상을 사용하였고, animation을
+                  사용한 움직임도 있으며 background-img:linear-gradient;를
+                  활용해 글자에 그라데이션 효과를 적용하여 기본 html과 css
+                  실력을 향상 시키기 좋은 사이트라고 생각하였습니다. 또한
+                  사이트가 전체적으로 움직임이 많은 사이트이기에 jquery 실력도
+                  향상 시키기 위해 clone coding 사이트로 선택하였습니다.
+                </div>
+
+                <div class="button en03">
+                  <a href=" https://yooyi00.github.io/story/" target="_blank"
+                    >사이트 바로가기</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--teamproject-->
+        <section class="project seoul">
+          <!--project_inner-->
+          <div class="inner">
+            <!--project_cloneWrap-->
+            <div class="cloneWrap">
+              <!--project_cloneWrap_left-->
+              <div class="left">
+                <ul class="mokup">
+                  <div class="circle"></div>
+                  <li class="pc">
+                    <img src="img/seoul_pc_mokup.png" alt="storytaco_pc" />
+                  </li>
+                  <li class="mo">
+                    <img src="img/seoul_mo_mokup.png" alt="storytaco_mo" />
+                  </li>
+                </ul>
+              </div>
+
+              <!--project_cloneWrap_right-->
+              <div class="right">
+                <h3 class="en02">Team Project</h3>
+
+                <ul class="con en03">
+                  <li>팀 프로젝트 - 서울 관광 사이트</li>
+                  <li>제작기간 : 2주</li>
+                  <li>기여도 : 25% (서울 소개 페이지)</li>
+                  <li>사용프로그램</li>
+                </ul>
+
+                <ul class="tool">
+                  <li><img src="img/vscode.png" alt="vscode" /></li>
+                  <li><img src="img/html.png" alt="html" /></li>
+                  <li><img src="img/css.png" alt="css" /></li>
+                  <li><img src="img/figma.png" alt="figma" /></li>
+                  <li>
+                    <img src="img/github.png" alt="github" />
+                  </li>
+                </ul>
+
+                <div class="txt en04">
+                  대한민국의 지역별 관광 사이트는 단순한 레이아웃으로 구성되어
+                  있어 단조롭고, 여백이 크게 느껴지는 단점이 컸으며 사이트의
+                  포인트가 되는 색감이 없고, 사람들의 시선을 집중 시키기
+                  어렵다는 문제점이 있습니다.<br />이러한 단점을 보완하여 서울의
+                  관광 사이트를 제작하였습니다.
+                </div>
+
+                <ul class="buttons en03">
+                  <li>
+                    <a
+                      href=" https://jjangminu.github.io/seoulmates/"
+                      target="_blank"
+                      >사이트 바로가기</a
+                    >
+                  </li>
+                  <li>기획서 바로가기</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!--team_project_view-->
+          <div class="view">
+            <img src="img/seoulmate.png" alt="team_project_기획서" />
+            <div class="close"><i class="fa-solid fa-xmark"></i></div>
+          </div>
+        </section>
+
+        <!--contact-->
+        <section class="contact" id="contact">
+          <!--contact_inner-->
+          <div class="inner">
+            <div class="right_circle"></div>
+
+              <h2 class="Title en01">CONTACT</h2>
+
+              <!--contact_con-->
+            <div class="con">
+              <h2 class="en01">
+                <div class="line01"></div>
+                Let's work Together
+              <div class="line02"></div>
+            </h2>
+
+            <div class="txtBox en04">
+               <p>저의 큰 호기심으로 많은 시도 끝에</p>
+               <p>오롯이 저만의 디자인이 나오는 그 날까지</p>
+               <p>끊임없이 노력하는 웹디자이너 유예인이 되겠습니다.</p>
+            </div>
+
+            <ul class="icons">
+              <li>
+                <div class="mail"><i class="fa-solid fa-paper-plane"></i></div>
+                <p>yooyi00@naver.com</p>
+              </li>
+              <li>
+                <div class="call"><i class="fa-solid fa-phone"></i></div>
+                <p>010-6322-3228</p>
+              </li>
+              <li>
+                <a href="https://open.kakao.com/o/smvAcjtf" target="_blank">
+                <div class="talk"><i class="fa-solid fa-comment"></i></div>
+                <p>Go to Open KakaoTalk</p>
+                </a>
+                
+              </li>
+            </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
