@@ -22,6 +22,7 @@
     <script src="js/splitting.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="js/index.js"></script>
   </head>
 
@@ -122,11 +123,7 @@
             </div>
 
             <div data-splitting class="ment en03">
-              <span class="color">호기심</span>이 많아 많은 것을 시도하고자
-              합니다.<br />
-              <span class="color">다양한 시도</span>끝에
-              <span class="color">완벽한 결과물</span>을 완성해 내는<br />웹디자이너가
-              되고싶습니다.
+              경험은 부족하지만, <span class="color">열정</span>과 <span class="color">의지</span>가 가득한<br>웹디자이너 유예인입니다.
             </div>
           </div>
 
@@ -582,18 +579,27 @@
               <h2 class="Title en01">CONTACT</h2>
 
               <!--contact_con-->
-            <div class="con">
+      <div class="con">
               <h2 class="en01">
                 <div class="line01"></div>
                 Let's work Together
               <div class="line02"></div>
             </h2>
 
-            <div class="txtBox en04">
-               <p>저의 큰 호기심으로 많은 시도 끝에</p>
-               <p>오롯이 저만의 디자인이 나오는 그 날까지</p>
-               <p>끊임없이 노력하는 웹디자이너 유예인이 되겠습니다.</p>
-            </div>
+            <div class="addressWrap">
+              <div class="contact-form">
+      <h3 class="en01">Contact Me</h3>
+      <input type="text" id="name" placeholder="이름" required />
+      <input type="email" id="email" placeholder="이메일 주소" required />
+      <textarea
+        id="message"
+        placeholder="내용을 입력하세요"
+        rows="5"
+        required
+      ></textarea>
+      <button onclick="sendEmail()" class="en02">전송하기</button>
+      <div id="response-message" class="message"></div>
+    </div>
 
             <ul class="icons">
               <li>
@@ -613,6 +619,15 @@
               </li>
             </ul>
             </div>
+
+            <div class="txtBox en04">
+               <p>쉽게 포기하지 않는 성격으로
+               결과물이 완벽하게 완성될 때까지
+               끊임없이 노력하는 웹퍼블리셔 유예인이 되겠습니다.</p>
+            </div>
+            </div>
+           
+
           </div>
         </section>
       </div>

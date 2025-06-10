@@ -74,6 +74,42 @@ $(function () {
     $("header .modal").css({ display: "none" });
   });
 
+  /*contact*/
+  (function () {
+    emailjs.init("nWpyzcMr0rY_2zaiu");
+
+    window.sendEmail = function () {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+      const responseEl = document.getElementById("response-message");
+
+      if (!name || !email || !message) {
+        responseEl.innerText = "모든 항목을 입력해주세요.";
+        responseEl.className = "message error-message";
+        return;
+      }
+
+      const templateParams = {
+        from_name: name,
+        from_email: email,
+        message: message,
+      };
+
+      emailjs.send("yooyi00", "template_to84i7f", templateParams).then(
+        function () {
+          responseEl.innerText = "이메일이 성공적으로 전송되었습니다!";
+          responseEl.className = "message success-message";
+        },
+        function (error) {
+          responseEl.innerText = "이메일 전송 중 오류가 발생했습니다.";
+          responseEl.className = "message error-message";
+          console.error("EmailJS error:", error);
+        }
+      );
+    };
+  })();
+
   /*gsap 반응형*/
   ScrollTrigger.matchMedia({
     /*pc*/
@@ -173,8 +209,12 @@ $(function () {
             //markers: true,
           },
         })
-        .fromTo(".contact .inner .con h2", { y: 500 }, { y: 0 })
-        .fromTo(".contact .inner .con .txtBox", { y: 500 }, { y: 0 })
+        .fromTo(".contact .inner .con h2", { y: 200 }, { y: 0 })
+        .fromTo(
+          ".contact .inner .con .addressWrap .contact-form",
+          { y: 200 },
+          { y: 0 }
+        )
         .fromTo(
           ".contact .inner .con .icons li:first-child",
           { y: 200 },
@@ -192,7 +232,8 @@ $(function () {
           { y: 200 },
           { y: 0 },
           1.4
-        );
+        )
+        .fromTo(".contact .inner .con .txtBox", { y: 200 }, { y: 0 });
     },
 
     /*태블릿*/
@@ -292,8 +333,12 @@ $(function () {
             //markers: true,
           },
         })
-        .fromTo(".contact .inner .con h2", { y: 500 }, { y: 0 })
-        .fromTo(".contact .inner .con .txtBox", { y: 500 }, { y: 0 })
+        .fromTo(".contact .inner .con h2", { y: 200 }, { y: 0 })
+        .fromTo(
+          ".contact .inner .con .addressWrap .contact-form",
+          { y: 200 },
+          { y: 0 }
+        )
         .fromTo(
           ".contact .inner .con .icons li:first-child",
           { y: 200 },
@@ -311,7 +356,8 @@ $(function () {
           { y: 200 },
           { y: 0 },
           1.4
-        );
+        )
+        .fromTo(".contact .inner .con .txtBox", { y: 200 }, { y: 0 });
     },
 
     /*모바일*/
@@ -411,8 +457,12 @@ $(function () {
             //markers: true,
           },
         })
-        .fromTo(".contact .inner .con h2", { y: 500 }, { y: 0 })
-        .fromTo(".contact .inner .con .txtBox", { y: 500 }, { y: 0 })
+        .fromTo(".contact .inner .con h2", { y: 200 }, { y: 0 })
+        .fromTo(
+          ".contact .inner .con .addressWrap .contact-form",
+          { y: 200 },
+          { y: 0 }
+        )
         .fromTo(
           ".contact .inner .con .icons li:first-child",
           { y: 200 },
@@ -430,7 +480,8 @@ $(function () {
           { y: 200 },
           { y: 0 },
           1.4
-        );
+        )
+        .fromTo(".contact .inner .con .txtBox", { y: 200 }, { y: 0 });
     },
   });
 });
