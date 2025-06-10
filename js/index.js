@@ -204,7 +204,7 @@ $(function () {
           scrollTrigger: {
             trigger: ".contact",
             start: "top 70%",
-            end: "70% 70%",
+            end: "30% 70%",
             scrub: 2,
             //markers: true,
           },
@@ -328,7 +328,7 @@ $(function () {
           scrollTrigger: {
             trigger: ".contact",
             start: "top 70%",
-            end: "70% 70%",
+            end: "30% 70%",
             scrub: 2,
             //markers: true,
           },
@@ -452,7 +452,7 @@ $(function () {
           scrollTrigger: {
             trigger: ".contact",
             start: "top 70%",
-            end: "70% 70%",
+            end: "30% 70%",
             scrub: 2,
             //markers: true,
           },
