@@ -3959,8 +3959,14 @@ body {
     clip-path: circle(50% at 100% 0);
   }
 
-  /*draft_con*/
-  .draft .inner .con {
+  .draft .inner h2 {
+    font-size: 2.5vw;
+  }
+
+  /*draftWrap*/
+
+  /*hybe*/
+  .draft .inner .draftWrap .hybe {
     width: 100%;
     height: 100%;
     display: flex;
@@ -3972,56 +3978,78 @@ body {
     transform: translate(-50%, -50%);
   }
 
-  .draft .inner .con > div {
+  /*hybe left*/
+  .draft .inner .draftWrap .hybe .left {
+    width: 35%;
     border: 1px solid #000;
   }
 
-  /*draft_left*/
-  .draft .inner .con .left {
-    width: 35%;
-  }
-
-  .draft .inner .con .left h2 {
+  .draft .inner .draftWrap .hybe .left h2 {
     font-size: 2.5vw;
+    text-align: center;
   }
 
-  .draft .inner .con .left .txt {
+  .draft .inner .draftWrap .hybe .left h3 {
     font-size: 1.5vw;
-    margin: 30px 0;
+    margin-top: 50px;
+  }
+
+  .draft .inner .draftWrap .hybe .left .txt {
+    font-size: 1.5vw;
+    margin: 50px 0 80px;
+    line-height: 1.5;
     border: 1px solid red;
   }
 
-  /*draft_tool*/
-  .draft .inner .con .left .tool {
+  .draft .inner .draftWrap .hybe .left .tool {
     width: 8vw;
     height: 2vw;
     display: flex;
     justify-content: space-between;
   }
 
-  .draft .inner .con .left .tool img {
+  .draft .inner .draftWrap .hybe .left .tool img {
     width: 100%;
     height: 100%;
   }
 
-  /*draft buttons*/
-  .draft .inner .con .left .buttons {
-    width: 10vw;
-    background-color: #2850bd;
+  .draft .inner .draftWrap .hybe .left .buttons {
+    width: 100%;
+    display: flex;
+    gap: 20px;
     font-size: 1.5vw;
     text-align: center;
     color: #fed600;
+  }
+
+  .draft .inner .draftWrap .hybe .left .buttons li {
+    width: 10vw;
     padding: 1vw;
+    background-color: #2850bd;
     cursor: pointer;
   }
 
-  /*draft_right*/
-  .draft .inner .con .right {
+  /*hybe right*/
+  .draft .inner .draftWrap .hybe .right {
     width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  .draft .inner .con .right img {
-    width: 100%;
+  .draft .inner .draftWrap .hybe .right .hybe_ds {
+    width: 90%;
+    height: 50%;
+    background: url(../img/hybe_pc.png) no-repeat center top / cover;
+    transition: 10s linear;
+    box-shadow: 10px 10px 5px #2850bd;
+    border: 3px double #fed600;
+  }
+
+  .draft .inner .draftWrap .hybe .right .hybe_ds.active {
+    background-position: center bottom;
   }
 
   /*project*/

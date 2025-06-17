@@ -74,6 +74,17 @@ $(function () {
     $("header .modal").css({ display: "none" });
   });
 
+  /*design_draft 자동 스크롤*/
+  $(window).on("scroll", function () {
+    let scrollTop = $(window).scrollTop();
+    let draftTop = $(".draft").offset().top;
+    if (scrollTop >= draftTop) {
+      $(".draft .inner .draftWrap .hybe .right .hybe_ds").addClass("active");
+    } else {
+      $(".draft .inner .draftWrap .hybe .right .hybe_ds").removeClass("active");
+    }
+  });
+
   /*contact*/
   (function () {
     emailjs.init("nWpyzcMr0rY_2zaiu");
