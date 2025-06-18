@@ -83,6 +83,12 @@ $(function () {
     } else {
       $(".draft .inner .draftWrap .hybe .right .hybe_ds").removeClass("active");
     }
+
+    if (scrollTop >= draftTop) {
+      $(".draft .inner .draftWrap .kfc .right .kfc_ds").addClass("active");
+    } else {
+      $(".draft .inner .draftWrap .kfc .right .kfc_ds").removeClass("active");
+    }
   });
 
   /*contact*/

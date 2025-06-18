@@ -4052,6 +4052,93 @@ body {
     background-position: center bottom;
   }
 
+  /*kfc*/
+  .draft .inner .draftWrap .kfc {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /*kfc left*/
+  .draft .inner .draftWrap .kfc .left {
+    width: 35%;
+    border: 1px solid #000;
+  }
+
+  .draft .inner .draftWrap .kfc .left h2 {
+    font-size: 2.5vw;
+    text-align: center;
+  }
+
+  .draft .inner .draftWrap .kfc .left h3 {
+    font-size: 1.5vw;
+    margin-top: 50px;
+  }
+
+  .draft .inner .draftWrap .kfc .left .txt {
+    font-size: 1.5vw;
+    margin: 50px 0 80px;
+    line-height: 1.5;
+    border: 1px solid red;
+  }
+
+  .draft .inner .draftWrap .kfc .left .tool {
+    width: 8vw;
+    height: 2vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .draft .inner .draftWrap .kfc .left .tool img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .draft .inner .draftWrap .kfc .left .buttons {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    font-size: 1.5vw;
+    text-align: center;
+    color: #fed600;
+  }
+
+  .draft .inner .draftWrap .kfc .left .buttons li {
+    width: 10vw;
+    padding: 1vw;
+    background-color: #2850bd;
+    cursor: pointer;
+  }
+
+  /*kfc right*/
+  .draft .inner .draftWrap .kfc .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .draft .inner .draftWrap .kfc .right .kfc_ds {
+    width: 90%;
+    height: 50%;
+    background: url(../img/kfc_pc.png) no-repeat center top / cover;
+    transition: 10s linear;
+    box-shadow: 10px 10px 5px #2850bd;
+    border: 3px double #fed600;
+  }
+
+  .draft .inner .draftWrap .kfc .right .kfc_ds.active {
+    background-position: center bottom;
+  }
+
   /*project*/
   .project {
     width: 100%;
