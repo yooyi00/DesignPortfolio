@@ -264,6 +264,7 @@ $(function () {
           },
         })
         .fromTo(".contact .inner .con h2", { y: 200 }, { y: 0 })
+        .fromTo(".contact .inner .con .txtBox", { y: 200 }, { y: 0 })
         .fromTo(
           ".contact .inner .con .addressWrap .contact-form",
           { y: 200 },
@@ -286,8 +287,7 @@ $(function () {
           { y: 200 },
           { y: 0 },
           1.4
-        )
-        .fromTo(".contact .inner .con .txtBox", { y: 200 }, { y: 0 });
+        );
     },
 
     /*태블릿*/
@@ -388,6 +388,7 @@ $(function () {
           },
         })
         .fromTo(".contact .inner .con h2", { y: 200 }, { y: 0 })
+        .fromTo(".contact .inner .con .txtBox", { y: 200 }, { y: 0 })
         .fromTo(
           ".contact .inner .con .addressWrap .contact-form",
           { y: 200 },
@@ -410,8 +411,7 @@ $(function () {
           { y: 200 },
           { y: 0 },
           1.4
-        )
-        .fromTo(".contact .inner .con .txtBox", { y: 200 }, { y: 0 });
+        );
     },
 
     /*모바일*/
@@ -512,6 +512,7 @@ $(function () {
           },
         })
         .fromTo(".contact .inner .con h2", { y: 200 }, { y: 0 })
+        .fromTo(".contact .inner .con .txtBox", { y: 200 }, { y: 0 })
         .fromTo(
           ".contact .inner .con .addressWrap .contact-form",
           { y: 200 },
@@ -534,8 +535,7 @@ $(function () {
           { y: 200 },
           { y: 0 },
           1.4
-        )
-        .fromTo(".contact .inner .con .txtBox", { y: 200 }, { y: 0 });
+        );
     },
   });
 });
