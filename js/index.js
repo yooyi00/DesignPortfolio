@@ -33,6 +33,7 @@ $(function () {
   /*design li클릭 시 이미지 재배치*/
   $(".design .inner .imgWrap").on("click", function () {
     $(this).addClass("on");
+    $(".design .inner .imgWrap .ds06 .click").css({ display: "none" });
   });
 
   /*design hover 시 뜨는 목업 보러가기 클릭 시 모달창*/

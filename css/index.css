@@ -701,6 +701,31 @@ body {
     cursor: pointer;
   }
 
+  /*click*/
+  .design .inner .imgWrap .ds06 .click {
+    width: 7vw;
+    height: 7vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    animation: scale 1s linear infinite;
+  }
+
+  @keyframes scale {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.5);
+    }
+  }
+
+  .design .inner .click img {
+    width: 100%;
+    height: 100%;
+  }
+
   /*draft*/
   .draft {
     width: 100%;
@@ -1984,6 +2009,31 @@ body {
     right: 12px;
     font-size: 4vw;
     cursor: pointer;
+  }
+
+  /*click*/
+  .design .inner .imgWrap .ds06 .click {
+    width: 7vw;
+    height: 7vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    animation: scale 1s linear infinite;
+  }
+
+  @keyframes scale {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.5);
+    }
+  }
+
+  .design .inner .click img {
+    width: 100%;
+    height: 100%;
   }
 
   /*draft*/
@@ -3315,6 +3365,31 @@ body {
     right: 12px;
     font-size: 3vw;
     cursor: pointer;
+  }
+
+  /*click*/
+  .design .inner .imgWrap .ds06 .click {
+    width: 6vw;
+    height: 6vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    animation: scale 1s linear infinite;
+  }
+
+  @keyframes scale {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.5);
+    }
+  }
+
+  .design .inner .click img {
+    width: 100%;
+    height: 100%;
   }
 
   /*draft*/
@@ -4657,6 +4732,31 @@ body {
     right: 12px;
     font-size: 1.5vw;
     cursor: pointer;
+  }
+
+  /*click*/
+  .design .inner .imgWrap .ds06 .click {
+    width: 5vw;
+    height: 5vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    animation: scale 1s linear infinite;
+  }
+
+  @keyframes scale {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.5);
+    }
+  }
+
+  .design .inner .click img {
+    width: 100%;
+    height: 100%;
   }
 
   /*draft*/
