@@ -81,7 +81,6 @@ $(function () {
     const total = slides.length;
 
     slides.hide().css("opacity", 0);
-
     slides.eq(current).css({ display: "flex" }).animate({ opacity: 1 }, 500);
 
     function goToSlide(index) {
