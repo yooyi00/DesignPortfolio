@@ -74,6 +74,44 @@ $(function () {
     $("header .modal").css({ display: "none" });
   });
 
+  /*design_draft setinterval*/
+  $(document).ready(function () {
+    let current = 0;
+    const slides = $(".draftWrap > ul");
+    const total = slides.length;
+
+    slides.hide().css("opacity", 0);
+
+    slides.eq(current).css({ display: "flex" }).animate({ opacity: 1 }, 500);
+
+    function goToSlide(index) {
+      slides.eq(current).animate({ opacity: 0 }, 500, function () {
+        $(this).css("display", "none");
+      });
+
+      slides.eq(index).css({ display: "flex" }).animate({ opacity: 1 }, 500);
+
+      current = index;
+    }
+
+    let slideInterval = setInterval(function () {
+      let next = (current + 1) % total;
+      goToSlide(next);
+    }, 5000);
+
+    $(".arrows .prev").click(function () {
+      clearInterval(slideInterval);
+      let prev = (current - 1 + total) % total;
+      goToSlide(prev);
+    });
+
+    $(".arrows .next").click(function () {
+      clearInterval(slideInterval);
+      let next = (current + 1) % total;
+      goToSlide(next);
+    });
+  });
+
   /*design_draft 자동 스크롤*/
   $(window).on("scroll", function () {
     let scrollTop = $(window).scrollTop();

@@ -703,9 +703,248 @@ body {
 
   /*draft*/
   .draft {
-    /* width: 100%;
-    height: 100vh; */
+    width: 100%;
+    height: 100vh;
+  }
+
+  /*draft_inner*/
+  .draft .inner {
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    position: relative;
+  }
+
+  /*draft_circles*/
+  .draft .inner .circles {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .draft .inner .left_circle {
+    width: 35vw;
+    height: 35vw;
+    background-color: #2850bd;
+    clip-path: circle(50% at 0 0);
+  }
+
+  .draft .inner .right_circle {
+    width: 20vw;
+    height: 20vw;
+    background-color: #fed600;
+    clip-path: circle(50% at 100% 0);
+  }
+
+  .draft .inner h2 {
+    font-size: 5vw;
+  }
+
+  /*draftWrap*/
+  .draft .inner .draftWrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .draft .inner .draftWrap > ul {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: none;
+  }
+
+  /*hybe*/
+  .draft .inner .draftWrap .hybe {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*hybe left*/
+  .draft .inner .draftWrap .hybe .left {
+    width: 90%;
+    height: 40%;
+  }
+
+  .draft .inner .draftWrap .hybe .left h2 {
+    font-size: 4.5vw;
+    margin: 30px 0;
+  }
+
+  .draft .inner .draftWrap .hybe .left h3 {
+    font-size: 3.5vw;
+  }
+
+  .draft .inner .draftWrap .hybe .left .txt {
+    font-size: 3.5vw;
+    margin: 30px 0;
+    line-height: 1.5;
+  }
+
+  .draft .inner .draftWrap .hybe .left .tool {
+    width: 30vw;
+    height: 8vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .draft .inner .draftWrap .hybe .left .tool img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .draft .inner .draftWrap .hybe .left .buttons {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    font-size: 3vw;
+    color: #fed600;
+  }
+
+  .draft .inner .draftWrap .hybe .left .buttons li {
+    width: 20vw;
+    padding: 2vw;
+    text-align: center;
+    background-color: #2850bd;
+    cursor: pointer;
+  }
+
+  /*hybe right*/
+  .draft .inner .draftWrap .hybe .right {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .draft .inner .draftWrap .hybe .right .hybe_ds {
+    width: 90%;
+    height: 70%;
+    background: url(../img/hybe_pc.png) no-repeat center top / cover;
+    transition: 10s linear;
+    box-shadow: 10px 10px 5px #000;
+    border: 3px double #fed600;
+    margin: 0px auto;
+  }
+
+  .draft .inner .draftWrap .hybe .right .hybe_ds.active {
+    background-position: center bottom;
+  }
+
+  /*kfc*/
+  .draft .inner .draftWrap .kfc {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*kfc left*/
+  .draft .inner .draftWrap .kfc .left {
+    width: 90%;
+    height: 40%;
+  }
+
+  .draft .inner .draftWrap .kfc .left h2 {
+    font-size: 4.5vw;
+    margin: 30px 0;
+  }
+
+  .draft .inner .draftWrap .kfc .left h3 {
+    font-size: 3.5vw;
+  }
+
+  .draft .inner .draftWrap .kfc .left .txt {
+    font-size: 3.5vw;
+    margin: 30px 0;
+    line-height: 1.5;
+  }
+
+  .draft .inner .draftWrap .kfc .left .tool {
+    width: 30vw;
+    height: 8vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .draft .inner .draftWrap .kfc .left .tool img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .draft .inner .draftWrap .kfc .left .buttons {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    font-size: 3vw;
+    color: #fed600;
+  }
+
+  .draft .inner .draftWrap .kfc .left .buttons li {
+    width: 20vw;
+    padding: 2vw;
+    text-align: center;
+    background-color: #2850bd;
+    cursor: pointer;
+  }
+
+  /*kfc right*/
+  .draft .inner .draftWrap .kfc .right {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .draft .inner .draftWrap .kfc .right .kfc_ds {
+    width: 90%;
+    height: 70%;
+    background: url(../img/kfc_pc.png) no-repeat center top / cover;
+    transition: 10s linear;
+    box-shadow: 10px 10px 5px #000;
+    border: 3px double #fed600;
+    margin: 0px auto;
+  }
+
+  .draft .inner .draftWrap .kfc .right .kfc_ds.active {
+    background-position: center bottom;
+  }
+
+  /*arrows*/
+  .draft .inner .draftWrap .arrows {
+    font-size: 5vw;
+    display: flex;
+  }
+
+  .draft .inner .draftWrap .arrows div {
+    cursor: pointer;
+  }
+
+  .draft .inner .draftWrap .arrows .prev {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    left: 15px;
+  }
+
+  .draft .inner .draftWrap .arrows .next {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    right: 10px;
   }
 
   /*project*/
@@ -1748,9 +1987,255 @@ body {
 
   /*draft*/
   .draft {
-    /* width: 100%;
-    height: 100vh; */
+    width: 100%;
+    height: 100vh;
+  }
+
+  /*draft_inner*/
+  .draft .inner {
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    position: relative;
+  }
+
+  /*draft_circles*/
+  .draft .inner .circles {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .draft .inner .left_circle {
+    width: 35vw;
+    height: 35vw;
+    background-color: #2850bd;
+    clip-path: circle(50% at 0 0);
+  }
+
+  .draft .inner .right_circle {
+    width: 20vw;
+    height: 20vw;
+    background-color: #fed600;
+    clip-path: circle(50% at 100% 0);
+  }
+
+  .draft .inner h2 {
+    font-size: 4vw;
+  }
+
+  /*draftWrap*/
+  .draft .inner .draftWrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .draft .inner .draftWrap > ul {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: none;
+  }
+
+  /*hybe*/
+  .draft .inner .draftWrap .hybe {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*hybe left*/
+  .draft .inner .draftWrap .hybe .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .draft .inner .draftWrap .hybe .left h2 {
+    font-size: 3vw;
+    text-align: center;
+  }
+
+  .draft .inner .draftWrap .hybe .left h3 {
+    font-size: 2.5vw;
+    margin-top: 30px;
+  }
+
+  .draft .inner .draftWrap .hybe .left .txt {
+    font-size: 2vw;
+    margin: 50px 0;
+    line-height: 1.5;
+  }
+
+  .draft .inner .draftWrap .hybe .left .tool {
+    width: 20vw;
+    height: 4.5vw;
+    display: flex;
+    gap: 2vw;
+  }
+
+  .draft .inner .draftWrap .hybe .left .tool img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .draft .inner .draftWrap .hybe .left .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.5vw;
+    text-align: center;
+    color: #fed600;
+  }
+
+  .draft .inner .draftWrap .hybe .left .buttons li {
+    width: 10vw;
+    padding: 1vw;
+    background-color: #2850bd;
+    cursor: pointer;
+  }
+
+  /*hybe right*/
+  .draft .inner .draftWrap .hybe .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .draft .inner .draftWrap .hybe .right .hybe_ds {
+    width: 90%;
+    height: 40%;
+    background: url(../img/hybe_pc.png) no-repeat center top / cover;
+    transition: 10s linear;
+    box-shadow: 10px 10px 5px #000;
+    border: 3px double #fed600;
+  }
+
+  .draft .inner .draftWrap .hybe .right .hybe_ds.active {
+    background-position: center bottom;
+  }
+
+  /*kfc*/
+  .draft .inner .draftWrap .kfc {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*kfc left*/
+  .draft .inner .draftWrap .kfc .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .draft .inner .draftWrap .kfc .left h2 {
+    font-size: 3vw;
+    text-align: center;
+  }
+
+  .draft .inner .draftWrap .kfc .left h3 {
+    font-size: 2.5vw;
+    margin-top: 30px;
+  }
+
+  .draft .inner .draftWrap .kfc .left .txt {
+    font-size: 2vw;
+    margin: 50px 0;
+    line-height: 1.5;
+  }
+
+  .draft .inner .draftWrap .kfc .left .tool {
+    width: 20vw;
+    height: 4.5vw;
+    display: flex;
+    gap: 2vw;
+  }
+
+  .draft .inner .draftWrap .kfc .left .tool img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .draft .inner .draftWrap .kfc .left .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.5vw;
+    text-align: center;
+    color: #fed600;
+  }
+
+  .draft .inner .draftWrap .kfc .left .buttons li {
+    width: 10vw;
+    padding: 1vw;
+    background-color: #2850bd;
+    cursor: pointer;
+  }
+
+  /*kfc right*/
+  .draft .inner .draftWrap .kfc .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .draft .inner .draftWrap .kfc .right .kfc_ds {
+    width: 90%;
+    height: 40%;
+    background: url(../img/kfc_pc.png) no-repeat center top / cover;
+    transition: 10s linear;
+    box-shadow: 10px 10px 5px #000;
+    border: 3px double #fed600;
+  }
+
+  .draft .inner .draftWrap .kfc .right .kfc_ds.active {
+    background-position: center bottom;
+  }
+
+  /*arrows*/
+  .draft .inner .draftWrap .arrows {
+    font-size: 2.5vw;
+    display: flex;
+  }
+
+  .draft .inner .draftWrap .arrows div {
+    cursor: pointer;
+  }
+
+  .draft .inner .draftWrap .arrows .prev {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    left: 10px;
+  }
+
+  .draft .inner .draftWrap .arrows .next {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    right: 10px;
   }
 
   /*project*/
@@ -2832,9 +3317,256 @@ body {
 
   /*draft*/
   .draft {
-    /* width: 100%;
-    height: 100vh; */
+    width: 100%;
+    height: 100vh;
+  }
+
+  /*draft_inner*/
+  .draft .inner {
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    position: relative;
+  }
+
+  /*draft_circles*/
+  .draft .inner .circles {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .draft .inner .left_circle {
+    width: 35vw;
+    height: 35vw;
+    background-color: #2850bd;
+    clip-path: circle(50% at 0 0);
+  }
+
+  .draft .inner .right_circle {
+    width: 20vw;
+    height: 20vw;
+    background-color: #fed600;
+    clip-path: circle(50% at 100% 0);
+  }
+
+  .draft .inner h2 {
+    font-size: 3.5vw;
+  }
+
+  /*draftWrap*/
+  .draft .inner .draftWrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .draft .inner .draftWrap > ul {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: none;
+  }
+
+  /*hybe*/
+  .draft .inner .draftWrap .hybe {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*hybe left*/
+  .draft .inner .draftWrap .hybe .left {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .draft .inner .draftWrap .hybe .left h2 {
+    font-size: 3vw;
+    text-align: center;
+  }
+
+  .draft .inner .draftWrap .hybe .left h3 {
+    font-size: 2vw;
+    margin-top: 50px;
+  }
+
+  .draft .inner .draftWrap .hybe .left .txt {
+    font-size: 1.8vw;
+    margin: 50px 0 80px;
+    line-height: 1.5;
+  }
+
+  .draft .inner .draftWrap .hybe .left .tool {
+    width: 15vw;
+    height: 3.5vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .draft .inner .draftWrap .hybe .left .tool img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .draft .inner .draftWrap .hybe .left .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.5vw;
+    text-align: center;
+    color: #fed600;
+  }
+
+  .draft .inner .draftWrap .hybe .left .buttons li {
+    width: 10vw;
+    padding: 1vw;
+    background-color: #2850bd;
+    cursor: pointer;
+  }
+
+  /*hybe right*/
+  .draft .inner .draftWrap .hybe .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .draft .inner .draftWrap .hybe .right .hybe_ds {
+    width: 90%;
+    height: 50%;
+    background: url(../img/hybe_pc.png) no-repeat center top / cover;
+    transition: 10s linear;
+    box-shadow: 10px 10px 5px #000;
+    border: 3px double #fed600;
+  }
+
+  .draft .inner .draftWrap .hybe .right .hybe_ds.active {
+    background-position: center bottom;
+  }
+
+  /*kfc*/
+  .draft .inner .draftWrap .kfc {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*kfc left*/
+  .draft .inner .draftWrap .kfc .left {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .draft .inner .draftWrap .kfc .left h2 {
+    font-size: 3vw;
+    text-align: center;
+  }
+
+  .draft .inner .draftWrap .kfc .left h3 {
+    font-size: 2vw;
+    margin-top: 50px;
+  }
+
+  .draft .inner .draftWrap .kfc .left .txt {
+    font-size: 1.8vw;
+    margin: 50px 0 80px;
+    line-height: 1.5;
+  }
+
+  .draft .inner .draftWrap .kfc .left .tool {
+    width: 15vw;
+    height: 3.5vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .draft .inner .draftWrap .kfc .left .tool img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .draft .inner .draftWrap .kfc .left .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.5vw;
+    text-align: center;
+    color: #fed600;
+  }
+
+  .draft .inner .draftWrap .kfc .left .buttons li {
+    width: 10vw;
+    padding: 1vw;
+    background-color: #2850bd;
+    cursor: pointer;
+  }
+
+  /*kfc right*/
+  .draft .inner .draftWrap .kfc .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .draft .inner .draftWrap .kfc .right .kfc_ds {
+    width: 90%;
+    height: 50%;
+    background: url(../img/kfc_pc.png) no-repeat center top / cover;
+    transition: 10s linear;
+    box-shadow: 10px 10px 5px #000;
+    border: 3px double #fed600;
+  }
+
+  .draft .inner .draftWrap .kfc .right .kfc_ds.active {
+    background-position: center bottom;
+  }
+
+  /*arrows*/
+  .draft .inner .draftWrap .arrows {
+    font-size: 2.5vw;
+    display: flex;
+  }
+
+  .draft .inner .draftWrap .arrows div {
+    cursor: pointer;
+  }
+
+  .draft .inner .draftWrap .arrows .prev {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    left: 5%;
+  }
+
+  .draft .inner .draftWrap .arrows .next {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    right: 5%;
   }
 
   /*project*/
@@ -3964,6 +4696,21 @@ body {
   }
 
   /*draftWrap*/
+  .draft .inner .draftWrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .draft .inner .draftWrap > ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
 
   /*hybe*/
   .draft .inner .draftWrap .hybe {
@@ -3972,16 +4719,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 
   /*hybe left*/
   .draft .inner .draftWrap .hybe .left {
     width: 35%;
-    border: 1px solid #000;
   }
 
   .draft .inner .draftWrap .hybe .left h2 {
@@ -3998,7 +4740,6 @@ body {
     font-size: 1.5vw;
     margin: 50px 0 80px;
     line-height: 1.5;
-    border: 1px solid red;
   }
 
   .draft .inner .draftWrap .hybe .left .tool {
@@ -4044,7 +4785,7 @@ body {
     height: 50%;
     background: url(../img/hybe_pc.png) no-repeat center top / cover;
     transition: 10s linear;
-    box-shadow: 10px 10px 5px #2850bd;
+    box-shadow: 10px 10px 5px #000;
     border: 3px double #fed600;
   }
 
@@ -4059,16 +4800,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 
   /*kfc left*/
   .draft .inner .draftWrap .kfc .left {
     width: 35%;
-    border: 1px solid #000;
   }
 
   .draft .inner .draftWrap .kfc .left h2 {
@@ -4085,7 +4821,6 @@ body {
     font-size: 1.5vw;
     margin: 50px 0 80px;
     line-height: 1.5;
-    border: 1px solid red;
   }
 
   .draft .inner .draftWrap .kfc .left .tool {
@@ -4131,12 +4866,36 @@ body {
     height: 50%;
     background: url(../img/kfc_pc.png) no-repeat center top / cover;
     transition: 10s linear;
-    box-shadow: 10px 10px 5px #2850bd;
+    box-shadow: 10px 10px 5px #000;
     border: 3px double #fed600;
   }
 
   .draft .inner .draftWrap .kfc .right .kfc_ds.active {
     background-position: center bottom;
+  }
+
+  /*arrows*/
+  .draft .inner .draftWrap .arrows {
+    font-size: 2.5vw;
+    display: flex;
+  }
+
+  .draft .inner .draftWrap .arrows div {
+    cursor: pointer;
+  }
+
+  .draft .inner .draftWrap .arrows .prev {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    left: 80px;
+  }
+
+  .draft .inner .draftWrap .arrows .next {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    right: 80px;
   }
 
   /*project*/
