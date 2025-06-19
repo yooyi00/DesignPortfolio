@@ -74,6 +74,50 @@ $(function () {
     $("header .modal").css({ display: "none" });
   });
 
+  /*design_draft setinterval*/
+  $(document).ready(function () {
+    let current = 0;
+    const slides = $(".draftWrap > ul");
+    const total = slides.length;
+
+    // 모든 슬라이드 숨기기
+    slides.hide().css("opacity", 0);
+    // 첫 슬라이드만 보이기 (display:flex 유지)
+    slides.eq(current).css({ display: "flex" }).animate({ opacity: 1 }, 500);
+
+    function goToSlide(index) {
+      // 현재 슬라이드 숨김 (fade 효과)
+      slides.eq(current).animate({ opacity: 0 }, 500, function () {
+        $(this).css("display", "none");
+      });
+
+      // 다음 슬라이드 보이기
+      slides.eq(index).css({ display: "flex" }).animate({ opacity: 1 }, 500);
+
+      current = index;
+    }
+
+    // 자동 슬라이드
+    let slideInterval = setInterval(function () {
+      let next = (current + 1) % total;
+      goToSlide(next);
+    }, 5000);
+
+    // 이전 버튼
+    $(".arrows .prev").click(function () {
+      clearInterval(slideInterval);
+      let prev = (current - 1 + total) % total;
+      goToSlide(prev);
+    });
+
+    // 다음 버튼
+    $(".arrows .next").click(function () {
+      clearInterval(slideInterval);
+      let next = (current + 1) % total;
+      goToSlide(next);
+    });
+  });
+
   /*design_draft 자동 스크롤*/
   $(window).on("scroll", function () {
     let scrollTop = $(window).scrollTop();

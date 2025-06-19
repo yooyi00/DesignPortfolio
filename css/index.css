@@ -3964,6 +3964,21 @@ body {
   }
 
   /*draftWrap*/
+  .draft .inner .draftWrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .draft .inner .draftWrap > ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
 
   /*hybe*/
   .draft .inner .draftWrap .hybe {
@@ -3972,10 +3987,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 
   /*hybe left*/
@@ -3998,7 +4009,6 @@ body {
     font-size: 1.5vw;
     margin: 50px 0 80px;
     line-height: 1.5;
-    border: 1px solid red;
   }
 
   .draft .inner .draftWrap .hybe .left .tool {
@@ -4044,7 +4054,7 @@ body {
     height: 50%;
     background: url(../img/hybe_pc.png) no-repeat center top / cover;
     transition: 10s linear;
-    box-shadow: 10px 10px 5px #2850bd;
+    box-shadow: 10px 10px 5px #000;
     border: 3px double #fed600;
   }
 
@@ -4059,10 +4069,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    /*position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);*/
   }
 
   /*kfc left*/
@@ -4131,12 +4141,36 @@ body {
     height: 50%;
     background: url(../img/kfc_pc.png) no-repeat center top / cover;
     transition: 10s linear;
-    box-shadow: 10px 10px 5px #2850bd;
+    box-shadow: 10px 10px 5px #000;
     border: 3px double #fed600;
   }
 
   .draft .inner .draftWrap .kfc .right .kfc_ds.active {
     background-position: center bottom;
+  }
+
+  /*arrows*/
+  .draft .inner .draftWrap .arrows {
+    font-size: 2.5vw;
+    display: flex;
+  }
+
+  .draft .inner .draftWrap .arrows div {
+    cursor: pointer;
+  }
+
+  .draft .inner .draftWrap .arrows .prev {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    left: 80px;
+  }
+
+  .draft .inner .draftWrap .arrows .next {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    right: 80px;
   }
 
   /*project*/
