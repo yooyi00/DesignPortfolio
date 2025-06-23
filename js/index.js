@@ -2,22 +2,6 @@ $(function () {
   Splitting();
   gsap.registerPlugin(ScrollTrigger);
 
-  /*gsap 공통*/
-  /*project*/
-  gsap.utils.toArray(".project").forEach((project, i) => {
-    gsap.timeline({
-      scrollTrigger: {
-        trigger: project,
-        start: "top top",
-        pin: true,
-        pinSpacing: false,
-        pinSpacing: i === 2,
-        true: false,
-        //markers: true,
-      },
-    });
-  });
-
   /*기획서 바로가기 클릭 시 모달창 구현*/
   $(".project .inner .cloneWrap .right .buttons li:last-child").on(
     "click",
@@ -253,6 +237,21 @@ $(function () {
         .fromTo(".design li.ds05", { y: 400 }, { y: -50 }, 1.8)
         .fromTo(".design li.ds06", { y: 400 }, { y: -50 }, 2);
 
+      /*project*/
+      gsap.utils.toArray(".project").forEach((project, i) => {
+        gsap.timeline({
+          scrollTrigger: {
+            trigger: project,
+            start: "top top",
+            pin: true,
+            pinSpacing: false,
+            pinSpacing: i === 2,
+            true: false,
+            //markers: true,
+          },
+        });
+      });
+
       /*contact*/
       gsap
         .timeline({
@@ -376,6 +375,21 @@ $(function () {
         .fromTo(".design li.ds04", { y: 400 }, { y: -50 }, 1.6)
         .fromTo(".design li.ds05", { y: 400 }, { y: -50 }, 1.8)
         .fromTo(".design li.ds06", { y: 400 }, { y: -50 }, 2);
+
+      /*project*/
+      gsap.utils.toArray(".project").forEach((project, i) => {
+        gsap.timeline({
+          scrollTrigger: {
+            trigger: project,
+            start: "top top",
+            pin: true,
+            pinSpacing: false,
+            pinSpacing: i === 2,
+            true: false,
+            //markers: true,
+          },
+        });
+      });
 
       /*contact*/
       gsap
